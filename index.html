@@ -1,20 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Azzle - AI Technology & Startup HTML Template</title>
-    <!-- Favicon -->
-    <link rel="icon" href="assets/img/favicon.png">
-    <!-- Tailwind css  -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Flowbite css -->
-     <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Azzle - AI Technology & Startup HTML Template</title>
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/favicon.png" />
+  <!-- Tailwind css  -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Flowbite css -->
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- view port -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- link css -->
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
+
 <body>
-   
-    <!-- FLOWBITE JS -->
-     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+  <!-- Header/khoa -->
+  <header>
+    <nav class="fixed top-0 z-50 w-full bg-white ">
+      <div class="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex h-[78px] items-center justify-between">
+          <a href="#" class="flex items-center gap-2">
+            <img src="./assets/img/logo-dark.png" class="h-7" alt="Website Logo" />
+          </a>
+
+          <ul class="hidden items-center gap-8 text-base font-semibold md:flex">
+            <li class="group relative">
+              <button class="flex items-center gap-1 transition hover:text-blue-600 py-3" type="button">
+                Demo
+                <i
+                  class="fa-solid fa-chevron-down text-xs transition-all duration-500 ease-out transform-gpu origin-center group-hover:-rotate-89">
+                </i>
+              </button>
+              <div
+                class="absolute top-full left-0 mt-0.5 w-56 rounded-xl bg-white shadow-xl opacity-0 scale-95 translate-y-2 transition-all duration-200 group-hover:opacity-100 group-hover:scale-100 group-hover:translate-y-0 dropdown-arrow pointer-events-none group-hover:pointer-events-auto">
+                <a href="#" class="block px-5 py-3 hover:bg-gray-100 rounded-t-xl">Home 1</a>
+                <a href="#" class="block px-5 py-3 hover:bg-gray-100">Home 2</a>
+                <a href="#" class="block px-5 py-3 hover:bg-gray-100">Home 3</a>
+                <a href="#" class="block px-5 py-3 hover:bg-gray-100 rounded-b-xl">Home 4</a>
+              </div>
+            </li>
+
+            <li>
+              <a href="#" class="transition hover:text-blue-600 py-3">About</a>
+            </li>
+
+            <li class="group relative">
+              <button class="flex items-center gap-1 transition hover:text-blue-600 py-3" type="button">
+                Services
+                <i
+                  class="fa-solid fa-chevron-down text-xs transition-all duration-500 ease-out transform-gpu origin-center group-hover:-rotate-89">
+                </i>
+              </button>
+
+              <div
+                class="absolute top-full left-0 mt-0.5 w-48 rounded-xl bg-white shadow-xl opacity-0 scale-95 translate-y-2 transition-all duration-200 group-hover:opacity-100 group-hover:scale-100 group-hover:translate-y-0 dropdown-arrow pointer-events-none group-hover:pointer-events-auto">
+                <a href="#" class="block px-5 py-3 hover:bg-gray-100 rounded-t-xl">Service 1</a>
+                <a href="#" class="block px-5 py-3 hover:bg-gray-100 rounded-b-xl">Service 2</a>
+              </div>
+            </li>
+
+            <li class="group relative">
+              <a href="#" class="flex items-center gap-2 py-3 transition hover:text-blue-600">
+                Pages
+                <i
+                  class="fa-solid fa-chevron-down text-xs transition-all duration-500 ease-out transform-gpu origin-center group-hover:-rotate-89"></i>
+              </a>
+
+              <div
+                class="absolute top-full left-0 mt-0.5 w-[260px] rounded-xl bg-white shadow-xl p-3 opacity-0 scale-95 translate-y-2 group-hover:opacity-100 group-hover:scale-100 group-hover:translate-y-0 dropdown-arrow pointer-events-none group-hover:pointer-events-auto transition-all duration-200">
+                <ul class="space-y-1 text-sm font-normal">
+                  <li class="group/blog relative">
+                    <div
+                      class="flex justify-between items-center cursor-pointer px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-blue-600">
+                      Blog <i class="fa-solid fa-chevron-right text-xs "></i>
+                    </div>
+
+                    <div
+                      class="absolute top-0 left-full ml-1 w-[200px] rounded-xl bg-white shadow-lg p-3 opacity-0 scale-95 translate-x-2 group-hover/blog:opacity-100 group-hover/blog:scale-100 group-hover/blog:translate-x-0 pointer-events-none group-hover/blog:pointer-events-auto transition-all duration-200">
+                      <a href="#" class="block px-3 py-1 rounded hover:bg-gray-100 hover:text-blue-600">Blogs</a>
+                      <a href="#" class="block px-3 py-1 rounded hover:bg-gray-100 hover:text-blue-600">Blog Details</a>
+                    </div>
+                  </li>
+
+                  <li class="group/team relative">
+                    <div
+                      class="flex justify-between items-center cursor-pointer px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-blue-600">
+                      Team <i class="fa-solid fa-chevron-right text-xs "></i>
+                    </div>
+
+                    <div
+                      class="absolute top-0 left-full ml-1 w-[200px] rounded-xl bg-white shadow-lg p-3 opacity-0 scale-95 translate-x-2 group-hover/team:opacity-100 group-hover/team:scale-100 group-hover/team:translate-x-0 pointer-events-none group-hover/team:pointer-events-auto transition-all duration-200">
+                      <a href="#" class="block px-3 py-1 rounded hover:bg-gray-100 hover:text-blue-600">Teams</a>
+                      <a href="#" class="block px-3 py-1 rounded hover:bg-gray-100 hover:text-blue-600">Team Details</a>
+                    </div>
+                  </li>
+
+                  <li class="group/faq relative">
+                    <div
+                      class="flex justify-between items-center cursor-pointer px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-blue-600">
+                      FAQ <i class="fa-solid fa-chevron-right text-xs "></i>
+                    </div>
+                    <div
+                      class="absolute top-0 left-full ml-1 w-[200px] rounded-xl bg-white shadow-lg p-3 opacity-0 scale-95 translate-x-2 group-hover/faq:opacity-100 group-hover/faq:scale-100 group-hover/faq:translate-x-0 pointer-events-none group-hover/faq:pointer-events-auto transition-all duration-200">
+                      <a href="#" class="block px-3 py-1 rounded hover:bg-gray-100 hover:text-blue-600">FAQ 1</a>
+                      <a href="#" class="block px-3 py-1 rounded hover:bg-gray-100 hover:text-blue-600">FAQ 2</a>
+                    </div>
+                  </li>
+
+                  <li class="group/portfolio relative">
+                    <div
+                      class="flex justify-between items-center cursor-pointer px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-blue-600">
+                      Portfolio
+                      <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </div>
+                    <div
+                      class="absolute top-0 left-full ml-1 w-[200px] rounded-xl bg-white shadow-lg p-3 opacity-0 scale-95 translate-x-2 group-hover/portfolio:opacity-100 group-hover/portfolio:scale-100 group-hover/portfolio:translate-x-0 pointer-events-none group-hover/portfolio:pointer-events-auto transition-all duration-200">
+                      <a href="#" class="block px-3 py-1 rounded hover:bg-gray-100 hover:text-blue-600">Portfolio</a>
+                      <a href="#" class="block px-3 py-1 rounded hover:bg-gray-100 hover:text-blue-600">Portfolio
+                        Details</a>
+                    </div>
+                  </li>
+
+                  <li>
+                    <a href="#" class="block px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-blue-600">Pricing</a>
+                  </li>
+
+                  <li class="group/util relative">
+                    <div
+                      class="flex justify-between items-center cursor-pointer px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-blue-600">
+                      Utilities
+                      <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </div>
+                    <div
+                      class="absolute top-0 left-full ml-1 w-[200px] rounded-xl bg-white shadow-lg p-3 opacity-0 scale-95 translate-x-2 group-hover/util:opacity-100 group-hover/util:scale-100 group-hover/util:translate-x-0 pointer-events-none group-hover/util:pointer-events-auto transition-all duration-200">
+                      <a href="#" class="block px-3 py-1 rounded hover:bg-gray-100 hover:text-blue-600">Error 404</a>
+                      <a href="#" class="block px-3 py-1 rounded hover:bg-gray-100 hover:text-blue-600">Login</a>
+                      <a href="#" class="block px-3 py-1 rounded hover:bg-gray-100 hover:text-blue-600">Sign Up</a>
+                      <a href="#" class="block px-3 py-1 rounded hover:bg-gray-100 hover:text-blue-600">Reset
+                        Password</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <a href="#" class="transition hover:text-blue-600 py-3">Contact</a>
+            </li>
+          </ul>
+
+          <div class="hidden items-center gap-4 md:flex">
+            <a href="#"
+              class="rounded-full border border-gray-300 px-6 py-2.5 text-[15px] font-semibold transition relative overflow-hidden hover:text-white hover-fill-red">
+              <span class="relative z-10">Login</span>
+            </a>
+            <a href="#"
+              class="rounded-full bg-black px-6 py-2.5 text-[15px] font-semibold text-white transition relative overflow-hidden hover-fill-red">
+              <span class="relative z-10">Sign Up Free</span>
+            </a>
+          </div>
+
+          <button id="mobile-menu-toggle" class="md:hidden text-2xl text-gray-800" aria-label="Toggle Mobile Menu"
+            type="button">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div id="mobile-menu"
+      class="fixed top-0 left-0 h-full w-64 bg-white shadow-2xl z-[60] transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden overflow-y-auto">
+      <div id="menu-screens-wrapper" class="relative w-full h-full">
+        <div id="main-screen" class="w-full h-full transition-transform duration-300 ease-in-out">
+          <div class="p-6">
+            <div class="flex justify-end mb-8">
+              <button id="mobile-menu-close" class="text-2xl text-gray-800" aria-label="Close Mobile Menu"
+                type="button">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+
+            <ul class="flex flex-col gap-0 text-base font-semibold">
+              <li class="border-b border-gray-200">
+                <button data-target="demo-screen"
+                  class="menu-btn-open flex items-center justify-between w-full transition hover:text-blue-600 py-4"
+                  type="button">
+                  Demo
+                  <i class="fa-solid fa-chevron-right text-xs"></i>
+                </button>
+              </li>
+
+              <li class="border-b border-gray-200">
+                <a href="#" class="block transition hover:text-blue-600 py-4">About</a>
+              </li>
+
+              <li class="border-b border-gray-200">
+                <button data-target="services-screen"
+                  class="menu-btn-open flex items-center justify-between w-full transition hover:text-blue-600 py-4"
+                  type="button">
+                  Services
+                  <i class="fa-solid fa-chevron-right text-xs"></i>
+                </button>
+              </li>
+
+              <li class="border-b border-gray-200">
+                <button data-target="pages-screen"
+                  class="menu-btn-open flex items-center justify-between w-full transition hover:text-blue-600 py-4"
+                  type="button">
+                  Pages
+                  <i class="fa-solid fa-chevron-right text-xs"></i>
+                </button>
+              </li>
+
+              <li class="border-b border-gray-200">
+                <a href="#" class="block transition hover:text-blue-600 py-4">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="demo-screen"
+          class="mobile-child-screen absolute top-0 left-0 w-full h-full bg-white transform translate-x-full transition-transform duration-300 ease-in-out">
+          <div class="flex items-center justify-between p-4 border-b border-gray-200">
+            <button class="menu-btn-back text-xl text-gray-800">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <span class="font-bold text-base">Demo</span>
+            <button id="mobile-menu-close-2" class="text-xl text-gray-800" aria-label="Close Mobile Menu" type="button">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <ul class="flex flex-col text-base font-normal overflow-y-auto">
+            <li class="border-b border-gray-200">
+              <a href="#" class="block py-4 px-4 hover:bg-gray-50">Home 1</a>
+            </li>
+            <li class="border-b border-gray-200">
+              <a href="#" class="block py-4 px-4 hover:bg-gray-50">Home 2</a>
+            </li>
+            <li class="border-b border-gray-200">
+              <a href="#" class="block py-4 px-4 hover:bg-gray-50">Home 3</a>
+            </li>
+            <li class="border-b border-gray-200">
+              <a href="#" class="block py-4 px-4 hover:bg-gray-50">Home 4</a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="services-screen"
+          class="mobile-child-screen absolute top-0 left-0 w-full h-full bg-white transform translate-x-full transition-transform duration-300 ease-in-out">
+          <div class="flex items-center justify-between p-4 border-b border-gray-200">
+            <button class="menu-btn-back text-xl text-gray-800">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <span class="font-bold text-base">Services</span>
+            <button id="mobile-menu-close-3" class="text-xl text-gray-800" aria-label="Close Mobile Menu" type="button">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <ul class="flex flex-col text-base font-normal overflow-y-auto">
+            <li class="border-b border-gray-200">
+              <a href="#" class="block py-4 px-4 hover:bg-gray-50">Service 1</a>
+            </li>
+            <li class="border-b border-gray-200">
+              <a href="#" class="block py-4 px-4 hover:bg-gray-50">Service 2</a>
+            </li>
+          </ul>
+        </div>
+        <!--  -->
+        <div id="pages-screen"
+          class="mobile-child-screen absolute top-0 left-0 w-full h-full bg-white transform translate-x-full transition-transform duration-300 ease-in-out">
+          <div class="flex items-center justify-between p-4 border-b border-gray-200">
+            <button class="menu-btn-back text-xl text-gray-800" data-parent="main-screen">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <span class="font-bold text-base">Pages</span>
+            <button id="mobile-menu-close-4" class="text-xl text-gray-800" aria-label="Close Mobile Menu" type="button">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <ul class="flex flex-col text-base font-normal overflow-y-auto">
+
+            <li class="border-b border-gray-200">
+              <button data-target="blog-screen"
+                class="menu-btn-open block py-4 px-4 hover:bg-gray-50 flex justify-between items-center w-full"
+                type="button">
+                Blogs <i class="fa-solid fa-chevron-right text-xs"></i>
+              </button>
+            </li>
+
+            <li class="border-b border-gray-200">
+              <button data-target="team-screen"
+                class="menu-btn-open block py-4 px-4 hover:bg-gray-50 flex justify-between items-center w-full"
+                type="button">
+                Team <i class="fa-solid fa-chevron-right text-xs"></i>
+              </button>
+            </li>
+
+            <li class="border-b border-gray-200">
+              <button data-target="faq-screen"
+                class="menu-btn-open block py-4 px-4 hover:bg-gray-50 flex justify-between items-center w-full"
+                type="button">
+                FAQ <i class="fa-solid fa-chevron-right text-xs"></i>
+              </button>
+            </li>
+
+            <li class="border-b border-gray-200">
+              <button data-target="portfolio-screen"
+                class="menu-btn-open block py-4 px-4 hover:bg-gray-50 flex justify-between items-center w-full"
+                type="button">
+                Portfolio <i class="fa-solid fa-chevron-right text-xs"></i>
+              </button>
+            </li>
+
+            <li class="border-b border-gray-200">
+              <a href="#" class="block py-4 px-4 hover:bg-gray-50">Pricing</a>
+            </li>
+
+            <li class="border-b border-gray-200">
+              <button data-target="utilities-screen"
+                class="menu-btn-open block py-4 px-4 hover:bg-gray-50 flex justify-between items-center w-full"
+                type="button">
+                Utilities <i class="fa-solid fa-chevron-right text-xs"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <!--  -->
+        <div id="blog-screen"
+          class="mobile-child-screen absolute top-0 left-0 w-full h-full bg-white transform translate-x-full transition-transform duration-300 ease-in-out">
+          <div class="flex items-center justify-between p-4 border-b border-gray-200">
+            <button class="menu-btn-back text-xl text-gray-800" data-parent="pages-screen">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <span class="font-bold text-base">Blogs</span>
+            <button id="mobile-menu-close-5" class="text-xl text-gray-800" aria-label="Close Mobile Menu" type="button">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <ul class="flex flex-col text-base font-normal overflow-y-auto">
+            <li class="border-b border-gray-200"><a href="#" class="block py-4 px-4 hover:bg-gray-50">Blogs</a></li>
+            <li class="border-b border-gray-200"><a href="#" class="block py-4 px-4 hover:bg-gray-50">Blog Details</a>
+            </li>
+          </ul>
+        </div>
+        <!--  -->
+        <div id="team-screen"
+          class="mobile-child-screen absolute top-0 left-0 w-full h-full bg-white transform translate-x-full transition-transform duration-300 ease-in-out">
+          <div class="flex items-center justify-between p-4 border-b border-gray-200">
+            <button class="menu-btn-back text-xl text-gray-800" data-parent="pages-screen">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <span class="font-bold text-base">Team</span>
+            <button id="mobile-menu-close-6" class="text-xl text-gray-800" aria-label="Close Mobile Menu" type="button">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <ul class="flex flex-col text-base font-normal overflow-y-auto">
+            <li class="border-b border-gray-200"><a href="#" class="block py-4 px-4 hover:bg-gray-50">Teams</a></li>
+            <li class="border-b border-gray-200"><a href="#" class="block py-4 px-4 hover:bg-gray-50">Team Details</a>
+            </li>
+          </ul>
+        </div>
+        <!--  -->
+        <div id="faq-screen"
+          class="mobile-child-screen absolute top-0 left-0 w-full h-full bg-white transform translate-x-full transition-transform duration-300 ease-in-out">
+          <div class="flex items-center justify-between p-4 border-b border-gray-200">
+            <button class="menu-btn-back text-xl text-gray-800" data-parent="pages-screen">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <span class="font-bold text-base">FAQ</span>
+            <button id="mobile-menu-close-7" class="text-xl text-gray-800" aria-label="Close Mobile Menu" type="button">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <ul class="flex flex-col text-base font-normal overflow-y-auto">
+            <li class="border-b border-gray-200"><a href="#" class="block py-4 px-4 hover:bg-gray-50">FAQ 1</a></li>
+            <li class="border-b border-gray-200"><a href="#" class="block py-4 px-4 hover:bg-gray-50">FAQ 2</a></li>
+          </ul>
+        </div>
+        <!--  -->
+        <div id="portfolio-screen"
+          class="mobile-child-screen absolute top-0 left-0 w-full h-full bg-white transform translate-x-full transition-transform duration-300 ease-in-out">
+          <div class="flex items-center justify-between p-4 border-b border-gray-200">
+            <button class="menu-btn-back text-xl text-gray-800" data-parent="pages-screen">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <span class="font-bold text-base">Portfolio</span>
+            <button id="mobile-menu-close-8" class="text-xl text-gray-800" aria-label="Close Mobile Menu" type="button">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <ul class="flex flex-col text-base font-normal overflow-y-auto">
+            <li class="border-b border-gray-200"><a href="#" class="block py-4 px-4 hover:bg-gray-50">Portfolio</a></li>
+            <li class="border-b border-gray-200"><a href="#" class="block py-4 px-4 hover:bg-gray-50">Portfolio
+                Detail</a></li>
+          </ul>
+        </div>
+        <!--  -->
+        <div id="utilities-screen"
+          class="mobile-child-screen absolute top-0 left-0 w-full h-full bg-white transform translate-x-full transition-transform duration-300 ease-in-out">
+          <div class="flex items-center justify-between p-4 border-b border-gray-200">
+            <button class="menu-btn-back text-xl text-gray-800" data-parent="pages-screen">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <span class="font-bold text-base">Utilities</span>
+            <button id="mobile-menu-close-9" class="text-xl text-gray-800" aria-label="Close Mobile Menu" type="button">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <ul class="flex flex-col text-base font-normal overflow-y-auto">
+            <li class="border-b border-gray-200"><a href="#" class="block py-4 px-4 hover:bg-gray-50">EROR-404</a></li>
+            <li class="border-b border-gray-200"><a href="#" class="block py-4 px-4 hover:bg-gray-50">Log In</a></li>
+            <li class="border-b border-gray-200"><a href="#" class="block py-4 px-4 hover:bg-gray-50">Sign Up</a></li>
+            <li class="border-b border-gray-200"><a href="#" class="block py-4 px-4 hover:bg-gray-50">Reset Password</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    </div>
+  </header>
+  <!-- Header/khoa end -->
+
+  <!-- FLOWBITE JS -->
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+  <!-- link js -->
+  <script src="./main.js"></script>
 </body>
+
 </html>

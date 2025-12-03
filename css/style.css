@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Tạo mũi tên cho dropdown */
+.dropdown-arrow::before {
+  content: "";
+  position: absolute;
+
+  left: 12px; 
+  top: -8px; 
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent; /* Độ rộng của mũi tên (một nửa) */
+  border-right: 8px solid transparent; /* Độ rộng của mũi tên (một nửa) */
+  border-bottom: 8px solid rgb(253, 0, 0); /* Chiều cao của mũi tên và MÀU NỀN */
+}
+/* làm nút đổ màu khi hover-header/khoa */
+.hover-fill-red {
+  position: relative;
+  overflow: hidden; 
+  z-index: 1; 
+}
+
+.hover-fill-red::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: red; /* Màu đỏ mà bạn muốn đổ vào */
+  z-index: -1; /* Đặt lớp phủ (tấm màng) này NẰM DƯỚI chữ Login */
+  
+  /* Đặt trạng thái ban đầu: Dịch chuyển lên trên 100% chiều cao của nó */
+  transform: translateY(-100%); 
+  
+  /* Thiết lập chuyển động mượt mà */
+  transition: transform 0.3s ease-in-out; 
+}
+.hover-fill-red:hover::before {
+  /* Dịch chuyển về vị trí ban đầu (lấp đầy nút) */
+  transform: translateY(0); 
+}
+
+/*  */
+.group::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 50px;
+}
+/*  */
