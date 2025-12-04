@@ -1,0 +1,43 @@
+/* Tạo mũi tên cho dropdown */
+.dropdown-arrow::before {
+  content: "";
+  position: absolute;
+  left: 12px; 
+  top: -8px; 
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent; 
+  border-right: 8px solid transparent; 
+  border-bottom: 8px solid rgb(253, 0, 0); 
+}
+/* làm nút đổ màu khi hover button*/
+.hover-fill-red {
+  position: relative;
+  overflow: hidden; 
+  z-index: 1; 
+}
+.hover-fill-red::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: red; 
+  z-index: -1; 
+  transform: translateY(-100%); 
+  transition: transform 0.3s ease-in-out; 
+}
+.hover-fill-red:hover::before {
+  transform: translateY(0); 
+}
+/* Tạo khoảng trống giữa hộp dropdown và header */
+.group::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 50px;
+}
+
