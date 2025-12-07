@@ -1,3 +1,17 @@
+body {
+    min-height: 100vh;
+    font-family: Inter, sans-serif;
+    font-size: 1.125rem;
+    --tw-text-opacity: 1;
+    color: rgb(25 25 25 / var(--tw-text-opacity));
+}
+
+.heading {
+    font-family: DM Sans, sans-serif;
+    font-weight: 700;
+    line-height: 1;
+}
+
 /* Tạo mũi tên cho dropdown */
 .dropdown-arrow::before {
   content: "";
