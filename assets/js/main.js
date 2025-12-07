@@ -69,3 +69,5 @@ document.querySelectorAll(".mobile-sub-btn").forEach(button => {
       mainScreen.classList.remove('-translate-x-full');
     });
   });
+
+JOS.init();
