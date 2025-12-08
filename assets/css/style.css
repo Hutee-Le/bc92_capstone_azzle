@@ -13,6 +13,9 @@ body {
 }
 
 /* Tạo mũi tên cho dropdown */
+.header{
+  background-color: #eeeae4;
+}
 .dropdown-arrow::before {
   content: "";
   position: absolute;
@@ -22,7 +25,7 @@ body {
   height: 0;
   border-left: 8px solid transparent; 
   border-right: 8px solid transparent; 
-  border-bottom: 8px solid rgb(253, 0, 0); 
+  border-bottom: 8px solid rgb(255, 255, 255); 
 }
 /* làm nút đổ màu khi hover button*/
 .hover-fill-red {
