@@ -69,5 +69,56 @@ document.querySelectorAll(".mobile-sub-btn").forEach(button => {
       mainScreen.classList.remove('-translate-x-full');
     });
   });
+// Đảm bảo rằng toàn bộ DOM đã được tải trước khi khởi tạo Slick
+$(document).ready(function () {
+    const $slider = $('.slick__library');
+    const totalItems = $slider.children().length;
+    const requiredToShow = 5;
 
+    // hàm x2 iems
+    if (totalItems === requiredToShow) {
+        $slider.children().each(function() {
+            $(this).clone().appendTo($slider);
+        });
+        console.log("Đã nhân bản 5 items để kích hoạt Slick Slider.");
+    }
+    $slider.slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: requiredToShow, 
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        cssEase: 'linear',
+        centerMode: true,
+        centerPadding: '0px', 
+        
+        responsive: [
+            {
+            breakpoint: 1024, // Dưới 1024px (Tablet lớn)
+            settings: {
+                slidesToShow: 4, // Hiện 4 item
+                slidesToScroll: 4
+            }
+            },
+            {
+            breakpoint: 768, // Dưới 768px (Mobile/Tablet nhỏ)
+            settings: {
+                slidesToShow: 2, // Hiện 2 item
+                slidesToScroll: 2
+            }
+            },
+            {
+            breakpoint: 480, // Dưới 480px (Mobile nhỏ)
+            settings: {
+                slidesToShow: 1, // Hiện 1 item
+                slidesToScroll: 1
+            }
+            }
+        ]
+    });
+    new WOW().init();
+});
 JOS.init();

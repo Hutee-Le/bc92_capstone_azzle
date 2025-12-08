@@ -12,10 +12,6 @@ body {
     line-height: 1;
 }
 
-.font-dmSans {
-  font-family: DM Sans, sans-serif;
-}
-
 /* Tạo mũi tên cho dropdown */
 .header{
   background-color: #eeeae4;
@@ -37,21 +33,30 @@ body {
   overflow: hidden; 
   z-index: 1; 
 }
+
 .hover-fill-red::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -100%;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: red; 
-  z-index: -1; 
+  background-color: red; /* Màu đỏ mà bạn muốn đổ vào */
+  z-index: -1; /* Đặt lớp phủ (tấm màng) này NẰM DƯỚI chữ Login */
+  
+  
+  /* Đặt trạng thái ban đầu: Dịch chuyển lên trên 100% chiều cao của nó */
   transform: translateY(-100%); 
+  
+  /* Thiết lập chuyển động mượt mà */
   transition: transform 0.3s ease-in-out; 
 }
 .hover-fill-red:hover::before {
+  /* Dịch chuyển về vị trí ban đầu (lấp đầy nút) */
   transform: translateY(0); 
+  top: 0;
 }
+
 /* Tạo khoảng trống giữa hộp dropdown và header */
 .group::after {
   content: "";
@@ -61,4 +66,64 @@ body {
   width: 100%;
   height: 50px;
 }
+/* hero */
+.wow {
+    visibility: hidden;
+} 
+.carousel{
+  background-color: #eeeae4;
+}
+.rounded-bottom-corners {
+    overflow: hidden; 
+    position: relative;
+    z-index: 1;
+}
+/*  */
+.glow-group{
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
 
+.glow-circle{
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(50% 50% at 50% 50%, #ff9831 0%, #fe330a 100%);
+  filter: blur(55px);
+  animation: spin 14s linear infinite;
+  opacity: 0.9;
+}
+.glow-circle.big{
+  width: 580px;
+  height: 580px;
+  right: -250px;
+  top: 10%;
+}
+
+.glow-circle.small{
+  width: 380px;
+  height: 380px;
+  right: 100px;
+  top: calc(35% + 20px);
+  transform-origin: center;
+  opacity: 0.85;
+  animation-duration: 10s;
+  z-index: 2; 
+}
+.pulse-animation {
+  animation: pulse 4s ease-in-out infinite;
+}
+
+.glow-circle {
+  animation: spin 10s linear infinite, pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+/* end hero */
