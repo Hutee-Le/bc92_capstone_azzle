@@ -17,7 +17,12 @@
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- link css -->
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- Font Site css -->
+  <link rel="stylesheet" href="./assets/fonts/font.css">
+  <!-- Jos Css -->
+  <link id="jos-stylesheet" rel="stylesheet" href="https://unpkg.com/jos-animation/dist/jos.css"
+    crossorigin="anonymous" />
 </head>
 <body>
   <!-- Header/khoa -->
@@ -393,9 +398,46 @@
   </header>
   <!-- Header/khoa end -->
 
+  <!-- Content Section Start -->
+  <section id="content-section-1">
+    <div class="pb-20 xl:pb-[150px]">
+      <div class="mx-auto px-4 max-w-[80%]">
+        <div class="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-20 xl:gap-28 2xl:gap-32">
+          <div class="rounded-md order-2 lg:order-1 jos" data-jos_animation="fade-left" data-jos_duration="1"
+            data-jos_once="1" data-jos_counter="1" data-jos_scrollDirection="down">
+            <img src="assets/img/content-image-1.jpg" alt="content-image-1" width="526" height="450"
+              class="h-auto w-full">
+          </div>
+          <div class="order-1 lg:order-2 jos" data-jos_animation="fade-right" data-jos_duration="1" data-jos_once="1"
+            data-jos_counter="1" data-jos_scrollDirection="down">
+            <div class=" mb-6">
+              <h2 class="heading text-[2rem] lg:text-[2.75rem] xl:text-[3.5rem] 2xl:text-[65px] leading-[1]">
+                Accessible to a wider audience</h2>
+            </div>
+            <div class="text-lg leading-[1.4] lg:text-[21px]">
+              <p class="mb-7 last:mb-0">
+                Advanced AI capabilities accessible to a broader audience,
+                including small &amp; medium-sized businesses and individuals
+                who may not have the resources or expertise to develop.
+              </p>
+              <p class="mb-7 last:mb-0">
+                Advanced AI capabilities accessible to a broader audience,
+                including small &amp; medium-sized businesses and individuals
+                who may not have the resources or expertise to develop.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Content Section End -->
+   
   <!-- FLOWBITE JS -->
   <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+  <!-- Jos JS -->
+  <script src="https://unpkg.com/jos-animation/dist/jos.min.js"></script>
   <!-- Link js -->
-  <script src="./main.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>
