@@ -11,7 +11,6 @@ body {
     font-weight: 700;
     line-height: 1;
 }
-
 /* Tạo mũi tên cho dropdown */
 .header{
   background-color: #eeeae4;
@@ -78,46 +77,16 @@ body {
     position: relative;
     z-index: 1;
 }
-/*  */
-.glow-group{
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-}
-
-.glow-circle{
-  position: absolute;
-  border-radius: 50%;
+.bg-glow-gradient {
   background: radial-gradient(50% 50% at 50% 50%, #ff9831 0%, #fe330a 100%);
+}
+.glow-filter {
   filter: blur(55px);
-  animation: spin 14s linear infinite;
-  opacity: 0.9;
 }
-.glow-circle.big{
-  width: 580px;
-  height: 580px;
-  right: -250px;
-  top: 10%;
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
 }
-
-.glow-circle.small{
-  width: 380px;
-  height: 380px;
-  right: 100px;
-  top: calc(35% + 20px);
-  transform-origin: center;
-  opacity: 0.85;
-  animation-duration: 10s;
-  z-index: 2; 
-}
-.pulse-animation {
-  animation: pulse 4s ease-in-out infinite;
-}
-
-.glow-circle {
-  animation: spin 10s linear infinite, pulse 4s ease-in-out infinite;
-}
-
 @keyframes pulse {
   0%, 100% {
     opacity: 1;
@@ -125,5 +94,14 @@ body {
   50% {
     opacity: 0.5;
   }
+}
+.animate-spin-14s {
+  animation: spin 14s linear infinite;
+}
+.animate-spin-10s {
+  animation: spin 10s linear infinite;
+}
+.animate-pulse {
+  animation: pulse 4s ease-in-out infinite;
 }
 /* end hero */
