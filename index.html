@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,7 +21,6 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
-
   <!-- animate -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
   <!-- link css -->
@@ -33,7 +31,6 @@
   <link id="jos-stylesheet" rel="stylesheet" href="https://unpkg.com/jos-animation/dist/jos.css"
     crossorigin="anonymous" />
 </head>
-
 <body>
   <!-- Header/khoa -->
   <header>
@@ -517,7 +514,8 @@
                 lengthy setup and development times in fast-paced
                 industries.
               </p>
-              <ul class="flex flex-col gap-y-5 font-dmSans text-xl leading-tight tracking-tighter text-black lg:mt-12 lg:text-[25px]">
+              <ul
+                class="flex flex-col gap-y-5 font-dmSans text-xl leading-tight tracking-tighter text-black lg:mt-12 lg:text-[25px]">
                 <li class="flex items-start gap-x-3">
                   <div class="mt-[1px] h-[30px] w-[30px]">
                     <img src="assets/img/check-circle.svg" alt="check-circle" width="30" height="30"
@@ -547,6 +545,68 @@
   </section>
   <!-- Content Section End -->
 
+  <!-- Funfact Section Start -->
+  <section id="funfact-section">
+    <div class="mx-auto px-5">
+      <div class="grid grid-cols-1 overflow-hidden rounded-[30px] bg-black lg:rounded-[50px]  xl:grid-cols-[0.8fr_1fr] 2xl:grid-cols-[1fr_1.2fr] jos"
+        data-jos_once="1" data-jos_animation="fade-up" data-jos_counter="1" data-jos_scrollDirection="down">
+        <!-- Funfact Left Block -->
+        <div class="relative overflow-hidden rounded-[30px] lg:rounded-[50px]">
+          <img src="assets/img/funfact-image.jpg" alt="funfact-image" width="721" height="784"
+            class="h-80 w-full object-cover object-center lg:h-[35rem] xl:h-full">
+          <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=3nQNiWdeH2Q"
+            class="absolute inset-0 z-[1] flex items-center justify-center">
+            <div
+              class="relative flex h-[120px] w-[120px] items-center justify-center rounded-full border-[3px] border-black text-lg font-bold backdrop-blur-[2px] transition-all duration-300 hover:bg-colorOrangyRed hover:text-white">
+              Play
+              <div
+                class="absolute -z-[1] h-[110%] w-[110%] animate-[ping_1.5s_ease-in-out_infinite] rounded-full bg-gray-600 opacity-30">
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Funfacct Left Block -->
+
+        <!-- Funfact Right Block -->
+        <div class="self-center px-6 py-10 sm:py-12 md:px-12 xl:px-10 xl:py-14 2xl:py-16 2xl:px-16">
+          <div class="mb-8 lg:mb-16 xl:mb-6">
+            <h2 class="text-white heading text-[2rem] lg:text-[2.75rem] xl:text-[3.5rem] 2xl:text-[70px] leading-[1]">AI-powered that streamline tasks</h2>
+          </div>
+          <div class="text-left text-lg leading-[1.4] text-white lg:text-[21px]">
+            <p class="mb-7 last:mb-0">
+              As your business grows or your AI SaaS needs change, you can
+              easily adjust your subscription level to match those needs.
+              This flexibility ensures that AI remains an asset.
+            </p>
+          </div>
+          <div class="my-14 h-[1px] w-full bg-colorCodGray"></div>
+          <ul
+            class="flex flex-col justify-center gap-x-11 gap-y-8 text-center sm:flex-row md:text-left xl:justify-normal xl:text-left 2xl:gap-x-20">
+            <li>
+              <h3 class="text-5xl text-colorOrangyRed md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-[120px]"
+                data-module="countup">
+                <span class="start-number" data-countup-number="92">92</span>%
+              </h3>
+              <span class="block text-lg font-normal text-white lg:text-[21px]">
+                Customer service inquiries
+              </span>
+            </li>
+            <li>
+              <h3 class="text-5xl text-colorOrangyRed md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-[120px]"
+                data-module="countup">
+                <span class="start-number" data-countup-number="75">75</span>%
+              </h3>
+              <span class="block text-lg font-normal text-white lg:text-[21px]">
+                Using financial institutions
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Funfact Section End -->
+
   <!-- FLOWBITE JS -->
   <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
   <!-- JQUERY -->
@@ -557,14 +617,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
     integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
   <!-- Jos JS -->
   <script src="https://unpkg.com/jos-animation/dist/jos.min.js"></script>
+  <!-- Fslightbox JS -->
+  <script src="./assets/js/fslightbox.js"></script>
   <!-- Link wow.js  -->
   <script src="./assets/js/wow.min.js"></script>
   <!-- Link js -->
   <script src="./assets/js/main.js"></script>
-
 </body>
-
 </html>
