@@ -34,7 +34,7 @@
 <body>
   <!-- Header/khoa -->
   <header>
-    <nav class="header fixed top-0 z-50 w-full bg-white ">
+    <nav class="fixed top-0 z-50 w-full bg-white ">
       <div class="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex h-[78px] items-center justify-between">
           <a href="#" class="flex items-center gap-2">
@@ -170,7 +170,7 @@
       </div>
     </nav>
     <div id="mobile-menu"
-      class="fixed top-0 left-0 h-full w-64 bg-white shadow-2xl z-[60] transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden overflow-y-auto">
+      class="fixed top-0 left-0 h-full w-64 bg-white shadow-2xl z-[200] transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden overflow-y-auto">
       <div id="menu-screens-wrapper" class="relative w-full h-full">
         <div id="main-screen" class="w-full h-full transition-transform duration-300 ease-in-out">
           <div class="p-6">
@@ -405,6 +405,57 @@
   </header>
   <!-- Header/khoa end -->
 
+  <!--Hero(Carousel)/khoa-->
+  <section class="carousel overflow-hidden relative rounded-b-[50px] pb-12">
+    <div class="carousel_content mx-auto w-full px-4 max-w-[70%]">
+      <div class="py-10 md:py-16 text-center">
+        <h1 class="mt-10 md:m-10 text-3xl sm:text-4xl md:text-5xl lg:text-8xl font-extrabold leading-tight text-black">
+          Simplify your SaaS </h1>
+        <h2 class="mb-6 md:mb-10 text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold leading-tight text-black">
+          solution with AI </h2>
+        <p class="mb-8 md:mb-10 font-bold text-black text-sm md:text-base lg:text-lg max-w-3xl mx-auto leading-relaxed">
+          Our AI SAAS tool is a cloud-based software delivery model. It helps businesses forecast demand for products
+          and services and optimize inventory management and supply chain operations. </p>
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8 md:mb-12 w-full sm:w-auto"> <a
+            href="#"
+            class="w-full sm:w-auto rounded-full bg-black px-8 py-3 text-[15px] font-semibold text-white transition relative overflow-hidden hover-fill-red text-center">
+            <span class="relative z-10">Get started for free</span> </a> <a href="#"
+            class="w-full sm:w-auto rounded-full border-2 border-black bg-transparent px-6 py-3 text-[15px] font-semibold transition relative overflow-hidden hover:text-white hover-fill-red text-center">
+            <span class="relative z-10">Learn more</span> </a> </div>
+        <div class="glow-group absolute inset-0 pointer-events-none overflow-hidden">
+          <div
+            class="glow-circle absolute rounded-full bg-glow-gradient glow-filter opacity-90 animate-spin-14s animate-pulse w-[500px] h-[500px] top-[32%] right-[-100px] lg:w-[600px] lg:h-[600px] lg:right-[-100px] lg:top-[25%]">
+          </div>
+          <div
+            class="glow-circle absolute rounded-full bg-glow-gradient glow-filter opacity-85 animate-spin-10s animate-pulse z-20 w-[320px] h-[320px] top-[75%] right-[100px] lg:w-[450px] lg:h-[450px] lg:right-[50px] lg:top-[50%]">
+          </div>
+        </div>
+        <div class="mt-6 md:mt-10 relative z-100"> <img src="./assets/img/hero-dashboard.jpg" alt="Dashboard"
+            class="w-full mx-auto rounded-xl shadow-lg border border-gray-100 max-w-4xl lg:max-w-5xl xl:max-w-6xl">
+        </div>
+        <div class="mx-auto w-full max-w-4xl lg:max-w-5xl xl:max-w-6xl">
+          <div class="my-10 md:my-16 border-t border-black"></div>
+          <p class="wow animate__animated animate__fadeInUp mb-8 md:mb-10 font-bold text-gray-500 text-sm md:text-base lg:text-lg"
+            data-wow-delay="0.2s"> Companies of all sizes trust us to find AI SaaS critical to their growth and innovation </p>
+          <div class="wow fadeIn animated slick__library mt-8" data-wow-delay="0.8s">
+            <div class="px-6"> <img src="./assets/img/brand-1.png"
+                class="h-8 md:h-10 mx-auto opacity-70 hover:opacity-100 transition"> </div>
+            <div class="px-6"> <img src="./assets/img/brand-2.png"
+                class="h-8 md:h-10 mx-auto opacity-70 hover:opacity-100 transition"> </div>
+            <div class="px-6"> <img src="./assets/img/brand-3.png"
+                class="h-8 md:h-10 mx-auto opacity-70 hover:opacity-100 transition"> </div>
+            <div class="px-6"> <img src="./assets/img/brand-4.png"
+                class="h-8 md:h-10 mx-auto opacity-70 hover:opacity-100 transition"> </div>
+            <div class="px-6"> <img src="./assets/img/brand-5.png"
+                class="h-8 md:h-10 mx-auto opacity-70 hover:opacity-100 transition"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Hero(Carousel)/khoa end -->
+
   <!-- Content Section Start -->
   <section id="content-section-1">
     <div class="pb-20 xl:pb-[150px]">
@@ -503,7 +554,6 @@
         <div class="relative overflow-hidden rounded-[30px] lg:rounded-[50px]">
           <img src="assets/img/funfact-image.jpg" alt="funfact-image" width="721" height="784"
             class="h-80 w-full object-cover object-center lg:h-[35rem] xl:h-full">
-          <!-- Video Play Button -->
           <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=3nQNiWdeH2Q"
             class="absolute inset-0 z-[1] flex items-center justify-center">
             <div
@@ -571,6 +621,8 @@
   <script src="https://unpkg.com/jos-animation/dist/jos.min.js"></script>
   <!-- Fslightbox JS -->
   <script src="./assets/js/fslightbox.js"></script>
+  <!-- Link wow.js  -->
+  <script src="./assets/js/wow.min.js"></script>
   <!-- Link js -->
   <script src="./assets/js/main.js"></script>
 </body>
