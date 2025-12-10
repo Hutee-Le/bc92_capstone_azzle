@@ -5,13 +5,11 @@ body {
     --tw-text-opacity: 1;
     color: rgb(25 25 25 / var(--tw-text-opacity));
 }
-
 .heading {
     font-family: DM Sans, sans-serif;
     font-weight: 700;
     line-height: 1;
 }
-/* Tạo mũi tên cho dropdown */
 .header{
   background-color: #eeeae4;
 }
@@ -26,13 +24,11 @@ body {
   border-right: 8px solid transparent; 
   border-bottom: 8px solid rgb(255, 255, 255); 
 }
-/* làm nút đổ màu khi hover button*/
 .hover-fill-red {
   position: relative;
   overflow: hidden; 
   z-index: 1; 
 }
-
 .hover-fill-red::before {
   content: "";
   position: absolute;
@@ -40,23 +36,15 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: red; /* Màu đỏ mà bạn muốn đổ vào */
-  z-index: -1; /* Đặt lớp phủ (tấm màng) này NẰM DƯỚI chữ Login */
-  
-  
-  /* Đặt trạng thái ban đầu: Dịch chuyển lên trên 100% chiều cao của nó */
+  background-color: red; 
+  z-index: -1;
   transform: translateY(-100%); 
-  
-  /* Thiết lập chuyển động mượt mà */
   transition: transform 0.3s ease-in-out; 
 }
 .hover-fill-red:hover::before {
-  /* Dịch chuyển về vị trí ban đầu (lấp đầy nút) */
   transform: translateY(0); 
   top: 0;
 }
-
-/* Tạo khoảng trống giữa hộp dropdown và header */
 .group::after {
   content: "";
   position: absolute;
@@ -73,9 +61,9 @@ body {
   background-color: #eeeae4;
 }
 .rounded-bottom-corners {
-    overflow: hidden; 
-    position: relative;
-    z-index: 1;
+  overflow: hidden; 
+  position: relative;
+  z-index: 1;
 }
 .bg-glow-gradient {
   background: radial-gradient(50% 50% at 50% 50%, #ff9831 0%, #fe330a 100%);
@@ -83,17 +71,12 @@ body {
 .glow-filter {
   filter: blur(55px);
 }
+.slick__library {
+  display: flex !important;
+}
 @keyframes spin {
   from { transform: rotate(0deg); }
   to   { transform: rotate(360deg); }
-}
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
 }
 .animate-spin-14s {
   animation: spin 14s linear infinite;
@@ -101,7 +84,13 @@ body {
 .animate-spin-10s {
   animation: spin 10s linear infinite;
 }
-.animate-pulse {
-  animation: pulse 4s ease-in-out infinite;
+@media (max-width: 767px) {
+  .slick__library .slick-track {
+    display: flex !important;
+  }
+
+  .slick__library .slick-slide:last-child {
+    margin-left: auto !important;
+  }
 }
 /* end hero */
