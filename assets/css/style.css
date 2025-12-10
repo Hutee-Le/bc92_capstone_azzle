@@ -10,6 +10,10 @@ body {
     font-weight: 700;
     line-height: 1;
 }
+
+.font-dmSans {
+  font-family: DM Sans, sans-serif;
+}
 /* Tạo mũi tên cho dropdown */
 .header{
   background-color: #eeeae4;
