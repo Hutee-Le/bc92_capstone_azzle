@@ -69,13 +69,10 @@ document.querySelectorAll(".mobile-sub-btn").forEach(button => {
       mainScreen.classList.remove('-translate-x-full');
     });
   });
-// Đảm bảo rằng toàn bộ DOM đã được tải trước khi khởi tạo Slick
 $(document).ready(function () {
     const $slider = $('.slick__library');
     const totalItems = $slider.children().length;
     const requiredToShow = 5;
-
-    // hàm x2 iems
     if (totalItems === requiredToShow) {
         $slider.children().each(function() {
             $(this).clone().appendTo($slider);
@@ -94,26 +91,25 @@ $(document).ready(function () {
         cssEase: 'linear',
         centerMode: true,
         centerPadding: '0px', 
-        
         responsive: [
             {
-            breakpoint: 1024, // Dưới 1024px (Tablet lớn)
+            breakpoint: 1024,
             settings: {
-                slidesToShow: 4, // Hiện 4 item
+                slidesToShow: 4,
                 slidesToScroll: 4
             }
             },
             {
-            breakpoint: 768, // Dưới 768px (Mobile/Tablet nhỏ)
+            breakpoint: 768, 
             settings: {
-                slidesToShow: 2, // Hiện 2 item
+                slidesToShow: 3,
                 slidesToScroll: 2
             }
             },
             {
-            breakpoint: 480, // Dưới 480px (Mobile nhỏ)
+            breakpoint: 480,
             settings: {
-                slidesToShow: 1, // Hiện 1 item
+                slidesToShow: 2, 
                 slidesToScroll: 1
             }
             }
