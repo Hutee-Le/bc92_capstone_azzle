@@ -99,3 +99,30 @@ body {
   }
 }
 /* end hero */
+/* service */
+@media (min-width: 1280px) {
+  .plus-divider::before,
+  .plus-divider::after {
+    display: none;
+  }
+}
+
+.plus-divider::before,
+.plus-divider::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: black;
+}
+
+.plus-divider::before {
+  top: 50%;
+}
+
+.plus-divider::after {
+  top: 100%;
+}
+
+/* end serivce */
