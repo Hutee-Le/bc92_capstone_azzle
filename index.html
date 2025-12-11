@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,6 +32,7 @@
   <link id="jos-stylesheet" rel="stylesheet" href="https://unpkg.com/jos-animation/dist/jos.css"
     crossorigin="anonymous" />
 </head>
+
 <body>
   <!-- Header/khoa -->
   <header>
@@ -649,7 +651,7 @@
           <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=3nQNiWdeH2Q"
             class="absolute inset-0 z-[1] flex items-center justify-center">
             <div
-              class="relative flex h-[120px] w-[120px] items-center justify-center rounded-full border-[3px] border-black text-lg font-bold backdrop-blur-[2px] transition-all duration-300 hover:bg-colorOrangyRed hover:text-white">
+              class="relative flex h-[120px] w-[120px] items-center justify-center rounded-full border-[3px] border-black text-lg font-bold backdrop-blur-[2px] transition-all duration-300 hover:bg-[rgb(254,51,10)] hover:text-white">
               Play
               <div
                 class="absolute -z-[1] h-[110%] w-[110%] animate-[ping_1.5s_ease-in-out_infinite] rounded-full bg-gray-600 opacity-30">
@@ -660,12 +662,11 @@
         <!-- Funfacct Left Block -->
 
         <!-- Funfact Right Block -->
-        <div class="self-center px-6 py-10 sm:py-12 md:px-12 xl:px-10 xl:py-14 2xl:py-16 2xl:pl-14 2xl:pr-32">
+        <div class="self-center px-6 py-16 sm:py-20 md:px-16 xl:pl-14 xl:pr-24 xl:py-24 2xl:py-32 2xl:pl-16 2xl:pr-28">
           <div class="mb-8 lg:mb-16 xl:mb-6">
-            <h2 class="text-white heading text-[2rem] lg:text-[2.75rem] xl:text-[3.5rem] 2xl:text-[75px] leading-[1]">
-              AI-powered that streamline tasks</h2>
+            <h2 class="text-white heading text-[2.25rem] sm:text-[2.5rem] lg:text-[3rem] xl:text-[4.5rem] 2xl:text-[80px] leading-[1]">AI-powered that streamline tasks</h2>
           </div>
-          <div class="text-left text-lg leading-[1.4] text-white lg:text-[21px]">
+          <div class="text-left text-lg leading-[1.4] text-white lg:text-[18px]">
             <p class="mb-7 last:mb-0">
               As your business grows or your AI SaaS needs change, you can
               easily adjust your subscription level to match those needs.
@@ -676,20 +677,20 @@
           <ul
             class="flex flex-col justify-center gap-x-11 gap-y-8 text-center sm:flex-row md:text-left xl:justify-normal xl:text-left 2xl:gap-x-20">
             <li>
-              <h3 class="text-5xl text-colorOrangyRed md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-[120px]"
+              <h3 class="heading text-5xl text-colorOrangyRed md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[140px]"
                 data-module="countup">
                 <span class="start-number" data-countup-number="92">92</span>%
               </h3>
-              <span class="block text-lg font-normal text-white lg:text-[21px]">
+              <span class="block text-xl font-normal text-white lg:text-[18px]">
                 Customer service inquiries
               </span>
             </li>
             <li>
-              <h3 class="text-5xl text-colorOrangyRed md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-[120px]"
+              <h3 class="heading text-5xl text-colorOrangyRed md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[140px]"
                 data-module="countup">
                 <span class="start-number" data-countup-number="75">75</span>%
               </h3>
-              <span class="block text-lg font-normal text-white lg:text-[21px]">
+              <span class="block text-xl font-normal text-white lg:text-[18px]">
                 Using financial institutions
               </span>
             </li>
@@ -716,7 +717,10 @@
   <script src="./assets/js/fslightbox.js"></script>
   <!-- Link wow.js  -->
   <script src="./assets/js/wow.min.js"></script>
+  <!-- Counter up js -->
+  <script src="assets/js/counterup.js" type="module"></script>
   <!-- Link js -->
   <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
