@@ -126,3 +126,10 @@ body {
 }
 
 /* end serivce */
+
+/* Funfact */
+.text-colorOrangyRed {
+  --tw-text-opacity: 1;
+  color: rgb(254 51 10 / var(--tw-text-opacity));
+}
+/* Funfact end */
