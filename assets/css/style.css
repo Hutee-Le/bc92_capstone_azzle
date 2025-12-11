@@ -135,3 +135,37 @@ body {
   color: rgb(254 51 10 / var(--tw-text-opacity));
 }
 /* Funfact end */
+
+
+/* Footer */
+.bg-colorLinenRuffle {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 234 227 / var(--tw-bg-opacity));
+}
+
+
+.footer-text-slider {
+  animation: horizontal-slide-from-right-to-left 10s linear infinite normal forwards;
+}
+
+.orange-gradient-1 {
+    background: radial-gradient(50% 50% at 50% 50%, #ff9831 0%, #fe330a 100%);
+    filter: blur(55px);
+}
+
+.orange-gradient-2 {
+    background: radial-gradient(50% 50% at 50% 50%, #fe330a 0%, #ff9831 100%);
+    filter: blur(55px);
+}
+
+/* Footer end*/
+
+@keyframes horizontal-slide-from-right-to-left {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
