@@ -117,4 +117,54 @@ $(document).ready(function () {
     });
     new WOW().init();
 });
+// according
+  const container = document.getElementById('accordion-card');
+  const buttons = container.querySelectorAll('button');
+
+  function openOnly(btn) {
+    const targetSel = btn.getAttribute('data-target');
+    const target = document.querySelector(targetSel);
+
+    // Close all
+    buttons.forEach(b => {
+      const t = document.querySelector(b.getAttribute('data-target'));
+      b.setAttribute('aria-expanded', 'false');
+      b.dataset.open = 'false';
+      t.classList.add('hidden');
+      t.classList.remove('block');
+    });
+
+    // Open clicked
+    btn.setAttribute('aria-expanded', 'true');
+    btn.dataset.open = 'true';
+    target.classList.remove('hidden');
+    target.classList.add('block');
+  }
+
+  buttons.forEach(btn => {
+    // Click to toggle, but always keep one open
+    btn.addEventListener('click', () => openOnly(btn));
+
+    // Keyboard support (Enter/Space)
+    btn.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        openOnly(btn);
+      }
+      // Optional: arrow navigation
+      if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+        e.preventDefault();
+        const list = Array.from(buttons);
+        const i = list.indexOf(btn);
+        const next = e.key === 'ArrowDown' ? list[i + 1] ?? list[0] : list[i - 1] ?? list[list.length - 1];
+        next.focus();
+      }
+    });
+  });
+
+  // Ensure at least one is open on load
+  window.addEventListener('DOMContentLoaded', () => {
+    const opened = container.querySelector('button[aria-expanded="true"]');
+    openOnly(opened || buttons[0]);
+  });
 JOS.init();
