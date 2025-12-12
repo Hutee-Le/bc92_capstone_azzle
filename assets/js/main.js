@@ -160,6 +160,21 @@ buttons.forEach(btn => {
       next.focus();
     }
   });
+JOS.init();
+// animation for according
+document.querySelectorAll('#accordion-card [data-target]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const panel = document.querySelector(btn.dataset.target);
+    if (!panel) return;
+    const content = panel.querySelector('.acc-des');
+    if (!content) return;
+    const animClasses = content.dataset.animate.trim().split(/\s+/);
+    // reset animation
+    content.classList.remove(...animClasses);
+    void content.offsetWidth;
+    content.classList.add(...animClasses);
+  });
+});
 });
 
 // Ensure at least one is open on load

@@ -127,6 +127,14 @@ body {
 
 /* end serivce */
 /* faq */
+/* .animated {
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+} */
 /* end faq */
 
 /* Funfact */
@@ -214,3 +222,27 @@ body {
     transform: translateX(-50%);
   }
 }
+/* testimonial */
+@media (min-width: 1110px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (min-width: 780px) and (max-width: 1109px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 779px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+/* dùng để cố định avatar */
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+/* testimonial end */
