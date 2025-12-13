@@ -21,7 +21,7 @@ body {
 .dropdown-arrow::before {
   content: "";
   position: absolute;
-  left: 12px; 
+  left: 50px; 
   top: -8px; 
   width: 0;
   height: 0;
@@ -246,3 +246,24 @@ body {
   height: 100%;
 }
 /* testimonial end */
+/* border_X */
+.column_x {
+  position: relative; /* Để định vị vạch kẻ theo nút này */
+}
+
+.column_x::before {
+  content: "";
+  position: absolute;
+  left: 0;          /* Nằm sát mép trái */
+  top: -100px;           /* Bắt đầu từ đỉnh */
+  bottom: -9px;        /* Kéo dài xuống đáy */
+  width: 1px;       /* Độ dày của vạch là 1px */
+  background-color: #d1d5db; /* Màu xám (tương đương border-gray-300) */
+  
+  /* Nếu bạn muốn vạch ngắn hơn (không chạm mép trên dưới), chỉnh top/bottom thành 10px chẳng hạn */
+}
+/* hover-orange */
+.hover-orange:hover {
+    /* Dùng !important để buộc màu chữ phải được áp dụng */
+    color: #f97316 !important; /* Tương đương orange-500 */
+}
